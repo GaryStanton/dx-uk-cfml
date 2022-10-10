@@ -1,0 +1,22 @@
+{
+    "name":"DX UK CFML",
+    "version":"0.1.0",
+    "author":"Gary Stanton",
+    "location":"GaryStanton/dx-uk-cfml",
+    "createPackageDirectory":"true",
+    "packageDirectory":"DXUKCFML",
+    "repository":{
+        "type":"git",
+        "URL":"https://github.com/GaryStanton/dx-uk-cfml"
+    },
+    "bugs":"https://github.com/GaryStanton/dx-uk-cfml/issues",
+    "slug":"DXUKCFML",
+    "shortDescription":"This module provides a method to process DX tracking files",
+    "type":"modules",
+    "keywords":"DX UK CFML ColdFusion Lucee",
+    "scripts":{
+        "postVersion":"package set location='GaryStanton/dx-uk-cfml#v`package version`'",
+        "onRelease":"publish",
+        "postPublish":"!git push --follow-tags"
+    }
+}
